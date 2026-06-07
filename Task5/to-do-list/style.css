@@ -1,0 +1,269 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ================= TODO BOX ================= */
+
+.todo-box{
+    width:500px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0px 0px 30px rgba(0,0,0,0.35);
+}
+
+/* ================= TITLE ================= */
+
+.todo-box h1{
+    text-align:center;
+
+    color:#38bdf8;
+
+    margin-bottom:30px;
+
+    font-size:36px;
+}
+
+/* ================= INPUT AREA ================= */
+
+.input-area{
+    display:flex;
+    gap:12px;
+}
+
+/* INPUT */
+
+.input-area input{
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+    outline:none;
+
+    border-radius:12px;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-size:15px;
+}
+
+/* PLACEHOLDER */
+
+.input-area input::placeholder{
+    color:#94a3b8;
+}
+
+/* ADD BUTTON */
+
+.input-area button{
+    padding:15px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#38bdf8;
+
+    color:black;
+
+    font-size:16px;
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+
+.input-area button:hover{
+    transform:translateY(-3px);
+
+    box-shadow:0px 5px 15px rgba(56,189,248,0.4);
+}
+
+/* ================= TASK LIST ================= */
+
+#taskList{
+    margin-top:30px;
+}
+
+/* ================= TASK ================= */
+
+.task{
+    background:#111827;
+
+    padding:15px;
+
+    margin-bottom:15px;
+
+    border-radius:14px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    transition:0.3s;
+}
+
+/* TASK HOVER */
+
+.task:hover{
+    transform:translateY(-2px);
+
+    box-shadow:0px 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ================= TASK TEXT ================= */
+
+.task span{
+    color:white;
+
+    font-size:16px;
+
+    word-break:break-word;
+}
+
+/* ================= COMPLETED TASK ================= */
+
+.completed{
+    text-decoration:line-through;
+
+    opacity:0.6;
+
+    color:#94a3b8 !important;
+}
+
+/* ================= BUTTON CONTAINER ================= */
+
+.btn-container{
+    display:flex;
+    gap:10px;
+}
+
+/* ================= DONE BUTTON ================= */
+
+.done-btn{
+    background:#22c55e;
+
+    border:none;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* DONE HOVER */
+
+.done-btn:hover{
+    background:#16a34a;
+}
+
+/* ================= REMOVE BUTTON ================= */
+
+.remove-btn{
+    background:#ef4444;
+
+    border:none;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    color:white;
+
+    font-size:14px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* REMOVE HOVER */
+
+.remove-btn:hover{
+    background:#dc2626;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:600px){
+
+    .todo-box{
+        width:100%;
+
+        padding:25px;
+    }
+
+    .todo-box h1{
+        font-size:30px;
+    }
+
+    .input-area{
+        flex-direction:column;
+    }
+
+    .input-area button{
+        width:100%;
+    }
+
+    .task{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .btn-container{
+        width:100%;
+        justify-content:flex-end;
+    }
+
+}

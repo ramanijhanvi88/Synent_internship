@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Navbar</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header>
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <i class="fa-solid fa-code"></i>
+
+            Jhanvi
+
+        </div>
+
+        <!-- NAV MENU -->
+
+        <nav id="navbar">
+
+            <a href="#">Home</a>
+
+            <a href="#">About</a>
+
+            <a href="#">Services</a>
+
+            <a href="#">Projects</a>
+
+            <a href="#">Contact</a>
+
+        </nav>
+
+        <!-- HAMBURGER -->
+
+        <div class="menu-icon" id="menuIcon">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <h1>Responsive Navigation Bar</h1>
+
+        <p>
+            Modern responsive navbar with hamburger menu for mobile devices.
+        </p>
+
+    </section>
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const menuIcon = document.getElementById("menuIcon");
+
+        const navbar = document.getElementById("navbar");
+
+        menuIcon.onclick = () => {
+
+            navbar.classList.toggle("active");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

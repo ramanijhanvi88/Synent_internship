@@ -1,0 +1,147 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* ================= BODY ================= */
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:#111827;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+}
+
+/* ================= LOGO ================= */
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#38bdf8;
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* ================= MENU ICON ================= */
+
+.menu-icon{
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+    display:none;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:18px;
+    max-width:700px;
+    line-height:30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    /* show hamburger */
+
+    .menu-icon{
+        display:block;
+    }
+
+    /* mobile navbar */
+
+    nav{
+        position:absolute;
+        top:80px;
+        left:-100%;
+
+        width:100%;
+        background:#111827;
+
+        flex-direction:column;
+        text-align:center;
+
+        padding:25px 0;
+
+        transition:0.4s;
+    }
+
+    nav a{
+        margin:15px 0;
+        display:block;
+    }
+
+    /* active menu */
+
+    nav.active{
+        left:0;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+}
