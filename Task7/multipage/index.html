@@ -1,61 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VendorBridge ERP | Smart Business Management</title>
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
-    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<!-- HEADER -->
 
-    <header>
+<header>
 
-        <div class="logo">Jhanvi</div>
+    <div class="logo">
+        <i class="fa-solid fa-chart-line"></i>
+        VendorBridge ERP
+    </div>
 
-        <nav>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="features.html">Features</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-            <a href="index.html">Home</a>
+    <div class="nav-buttons">
+        <a href="login.html" class="login-btn">Login</a>
+        <a href="register.html" class="register-btn">Register</a>
+    </div>
 
-            <a href="about.html">About</a>
+</header>
 
-            <a href="services.html">Services</a>
+<!-- HERO SECTION -->
 
-            <a href="contact.html">Contact</a>
+<section class="hero">
 
-        </nav>
+    <div class="hero-content">
 
-    </header>
+        <div class="tagline">
+            SMART ERP MANAGEMENT SYSTEM
+        </div>
 
-    <!-- HERO -->
+        <h1>
+            Manage Your
+            <span>Business</span>
+            Efficiently
+        </h1>
 
-    <section class="hero">
+        <p>
+            VendorBridge ERP helps organizations manage procurement,
+            inventory, vendors, invoices, analytics and reporting
+            through a single integrated platform.
+        </p>
 
-        <div class="hero-text">
+        <div class="hero-buttons">
 
-            <h1>Welcome To My Website</h1>
+            <a href="register.html" class="primary-btn">
+                Get Started
+            </a>
 
-            <p>
-                Modern multi-page responsive website design.
-            </p>
-
-            <a href="about.html" class="btn">
-                Explore More
+            <a href="about.html" class="secondary-btn">
+                Learn More
             </a>
 
         </div>
 
-    </section>
+        <div class="hero-stats">
+
+            <div class="stat-box">
+                <h2>500+</h2>
+                <p>Companies</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>50K+</h2>
+                <p>Transactions</p>
+            </div>
+
+            <div class="stat-box">
+                <h2>99%</h2>
+                <p>Accuracy</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+        <img src="image.png" alt="ERP Dashboard">
+    </div>
+
+</section>
+
+<!-- FEATURES PREVIEW -->
+
+<section>
+
+    <div class="section-heading">
+        <span>FEATURES</span>
+        <h2>Why Choose VendorBridge ERP?</h2>
+        <p>
+            Everything your business needs in one powerful platform.
+        </p>
+    </div>
+
+    <div class="features-container">
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-box"></i>
+            </div>
+
+            <h3>Inventory Management</h3>
+
+            <p>
+                Monitor stock levels, warehouses and inventory
+                movement in real time.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h3>Vendor Management</h3>
+
+            <p>
+                Maintain supplier records and improve procurement
+                relationships.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-chart-pie"></i>
+            </div>
+
+            <h3>Analytics & Reports</h3>
+
+            <p>
+                Gain valuable insights through intelligent dashboards
+                and reports.
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <div class="icon-box">
+                <i class="fa-solid fa-file-invoice"></i>
+            </div>
+
+            <h3>Procurement Automation</h3>
+
+            <p>
+                Simplify RFQs, quotations and purchase order workflows.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES SECTION -->
+
+<section>
+
+    <div class="section-heading">
+        <span>SERVICES</span>
+        <h2>Business Solutions We Provide</h2>
+        <p>
+            Designed to support growing businesses and enterprises.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-box">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Inventory Control</h3>
+            <p>Efficient stock and warehouse management.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-user-group"></i>
+            <h3>Supplier Management</h3>
+            <p>Centralized vendor database and evaluation.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-file-contract"></i>
+            <h3>Procurement</h3>
+            <p>Automated procurement lifecycle management.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Business Analytics</h3>
+            <p>Advanced reports and real-time dashboards.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- RESULTS SECTION -->
+
+<section>
+
+    <div class="section-heading">
+        <span>RESULTS</span>
+        <h2>Business Impact</h2>
+        <p>
+            Trusted by organizations worldwide.
+        </p>
+    </div>
+
+    <div class="results-container">
+
+        <div class="result-card">
+            <h1>90%</h1>
+            <p>Efficiency Increase</p>
+        </div>
+
+        <div class="result-card">
+            <h1>75%</h1>
+            <p>Cost Reduction</p>
+        </div>
+
+        <div class="result-card">
+            <h1>99%</h1>
+            <p>Data Accuracy</p>
+        </div>
+
+        <div class="result-card">
+            <h1>24/7</h1>
+            <p>System Availability</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA SECTION -->
+
+<section class="page-banner">
+
+    <h1>Ready To Transform Your Business?</h1>
+
+    <p>
+        Join hundreds of companies already using VendorBridge ERP.
+    </p>
+
+    <br>
+
+    <a href="register.html" class="primary-btn">
+        Start Free Trial
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <h2>VendorBridge ERP</h2>
+
+            <p>
+                Smart ERP solution for modern businesses.
+            </p>
+        </div>
+
+        <div class="social-icons">
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+            <a href="#"><i class="fab fa-instagram"></i></a>
+
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+            <a href="#"><i class="fab fa-github"></i></a>
+
+        </div>
+
+        <p>
+            © 2026 VendorBridge ERP. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
 
 </body>
-
 </html>
